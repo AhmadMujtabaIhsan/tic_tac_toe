@@ -154,7 +154,6 @@ h1{color: rgb(40, 134, 134); text-decoration: underline; text-align: center;}
     visibility: hidden;
 }
 
-
 #div_6
 {
     border-width: 5px;
@@ -176,7 +175,6 @@ h1{color: rgb(40, 134, 134); text-decoration: underline; text-align: center;}
     position: absolute;
     top: 220px;
 }
-
 
 #d6_x_b
 {
@@ -209,14 +207,13 @@ h1{color: rgb(40, 134, 134); text-decoration: underline; text-align: center;}
 #d7_o_b
 {
     visibility: hidden;
-    position: relative;
+    position: absolute;
 }
 
 #d7_x_b
 {
     visibility: hidden;
 }
-
 
 #div_8
 {
@@ -246,7 +243,6 @@ h1{color: rgb(40, 134, 134); text-decoration: underline; text-align: center;}
 
 #div_9
 {
-    border: 5PX;
     border-width: 5px;
     border-style: solid;
     width: 25vmin;
@@ -263,7 +259,7 @@ h1{color: rgb(40, 134, 134); text-decoration: underline; text-align: center;}
 #d9_o_b
 {
     visibility: hidden;
-    position: absolute;
+    position:absolute;
 }
 
 #d9_x_b
@@ -289,7 +285,6 @@ h1{color: rgb(40, 134, 134); text-decoration: underline; text-align: center;}
     width: 20%;
     height: 50px;
     border-radius: 10px;
-
 }
 }
 
