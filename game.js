@@ -84,6 +84,7 @@ let div9 = document.getElementById("div_9");
 //Accessing reset button
 let restButton = document.getElementById("reset_btn");
 
+let IsGameEnded = false;
 let number = 0;
 
 //First box logic
@@ -91,7 +92,8 @@ div1.onclick = ()=>
 {
     number++;
 
-    if (firstBoxO.style.visibility == "visible" || firstBoxX.style.visibility == "visible")
+    if (firstBoxO.style.visibility == "visible" || firstBoxX.style.visibility == "visible"
+         || IsGameEnded)
     {
         return;
     }
@@ -118,6 +120,7 @@ div1.onclick = ()=>
         && div9.firstChild.style.visibility == "visible" 
     )
    {
+    IsGameEnded = true;
        alert("Congratulation! Player O Is Winner");
        confetti();
    }
@@ -132,11 +135,13 @@ div1.onclick = ()=>
     && div9.lastChild.style.visibility == "visible" 
 )
     {
+        IsGameEnded = true;
         alert("Congratulation! Player X Is Winner");
         confetti();
    }
    else if (number == 9) 
     {
+        IsGameEnded = true;
       alert("Game Is Draw!")
    }
 }
@@ -146,7 +151,8 @@ div2.onclick = ()=>
     {
         number++;
     
-        if (secondBoxO.style.visibility == "visible" || secondBoxX.style.visibility == "visible")
+        if (secondBoxO.style.visibility == "visible" || secondBoxX.style.visibility == "visible"
+            || IsGameEnded)
         {
             return;
         }
@@ -170,6 +176,8 @@ div2.onclick = ()=>
             && div8.firstChild.style.visibility == "visible"
         )
        {
+   
+           IsGameEnded = true;
            alert("Congratulation! Player O Is Winner");
            confetti();
        }
@@ -181,11 +189,13 @@ div2.onclick = ()=>
         && div8.lastChild.style.visibility == "visible"
     )
         {
+            IsGameEnded = true;
             alert("Congratulation! Player X Is Winner");
             confetti();
        }
        else if (number == 9) 
         {
+            IsGameEnded = true;
           alert("Game Is Draw!");
        }
     }
@@ -195,7 +205,9 @@ div3.onclick = ()=>
     {
         number++;
     
-        if (thirdBoxO.style.visibility == "visible" || thirdBoxX.style.visibility == "visible")
+        if (thirdBoxO.style.visibility == "visible" || thirdBoxX.style.visibility == "visible"
+            || IsGameEnded
+        )
         {
             return;
         }
@@ -223,8 +235,8 @@ div3.onclick = ()=>
 
         )
        {
+           IsGameEnded = true;
            alert("Congratulation! Player O Is Winner");
-         
            confetti();
        }
        else if ( div1.lastChild.style.visibility == "visible"
@@ -239,11 +251,13 @@ div3.onclick = ()=>
 
     )
         {
+            IsGameEnded = true;
             alert("Congratulation! Player X Is Winner");
             confetti();
        }
        else if (number == 9) 
         {
+          IsGameEnded = true;
           alert("Game Is Draw!");
        }
     }
@@ -253,7 +267,9 @@ div4.onclick = ()=>
     {
         number++;
     
-        if (forthBoxO.style.visibility == "visible" || forthBoxX.style.visibility == "visible")
+        if (forthBoxO.style.visibility == "visible" || forthBoxX.style.visibility == "visible"
+            || IsGameEnded
+        )
         {
             return;
         }
@@ -277,6 +293,7 @@ div4.onclick = ()=>
             && div6.firstChild.style.visibility == "visible" 
         )
        {
+           IsGameEnded = true;
            alert("Congratulation! Player O Is Winner");
            confetti();
        }
@@ -288,11 +305,13 @@ div4.onclick = ()=>
         && div6.lastChild.style.visibility == "visible" 
     )
         {
+            IsGameEnded = true;
             alert("Congratulation! Player X Is Winner");
             confetti();
        }
        else if (number == 9) 
         {
+            IsGameEnded = true;
           alert("Game Is Draw!");
        }
     }
@@ -302,7 +321,9 @@ div5.onclick = ()=>
     {
         number++;
     
-        if (fifthBoxO.style.visibility == "visible" || fifthBoxX.style.visibility == "visible")
+        if (fifthBoxO.style.visibility == "visible" || fifthBoxX.style.visibility == "visible"
+            || IsGameEnded
+        )
         {
             return;
         }
@@ -332,6 +353,7 @@ div5.onclick = ()=>
             && div7.firstChild.style.visibility == "visible" 
         )
        {
+           IsGameEnded = true;
            alert("Congratulation! Player O Is Winner");
            confetti();
        }
@@ -349,11 +371,13 @@ div5.onclick = ()=>
         && div7.lastChild.style.visibility == "visible" 
     )
         {
+            IsGameEnded = true;
             alert("Congratulation! Player X Is Winner");
             confetti();
        }
        else if (number == 9) 
         {
+          IsGameEnded = true;
           alert("Game Is Draw!")
        }
     }
@@ -363,7 +387,9 @@ div6.onclick = ()=>
     {
         number++;
     
-        if (sixthBoxO.style.visibility == "visible" || sixthBoxX.style.visibility == "visible")
+        if (sixthBoxO.style.visibility == "visible" || sixthBoxX.style.visibility == "visible"
+            || IsGameEnded
+        )
         {
             return;
         }
@@ -387,6 +413,7 @@ div6.onclick = ()=>
             && div6.firstChild.style.visibility == "visible"
         )
        {
+           IsGameEnded = true;
            alert("Congratulation! Player O Is Winner");
            confetti();
        }
@@ -398,11 +425,13 @@ div6.onclick = ()=>
         && div6.lastChild.style.visibility == "visible"
     )
         {
+            IsGameEnded = true;
             alert("Congratulation! Player X Is Winner");
             confetti();
        }
        else if (number == 9) 
         {
+          IsGameEnded = true;
           alert("Game Is Draw!")
        }
     }
@@ -412,7 +441,9 @@ div7.onclick = ()=>
     {
         number++;
     
-        if (seventhBoxO.style.visibility == "visible" || seventhBoxX.style.visibility == "visible")
+        if (seventhBoxO.style.visibility == "visible" || seventhBoxX.style.visibility == "visible"
+            || IsGameEnded
+        )
         {
             return;
         }
@@ -439,6 +470,7 @@ div7.onclick = ()=>
             && div9.firstChild.style.visibility == "visible"
         )
        {
+           IsGameEnded = true;
            alert("Congratulation! Player O Is Winner");
            confetti();
        }
@@ -453,13 +485,15 @@ div7.onclick = ()=>
         && div9.lastChild.style.visibility == "visible"
     )
         {
+            IsGameEnded = true;
             alert("Congratulation! Player X Is Winner");
             confetti();
        }
        else if (number == 9) 
         {
+          IsGameEnded = true;
           alert("Game Is Draw!")
-       }
+        }
     }
 
     //Eight box logic
@@ -467,7 +501,9 @@ div8.onclick = ()=>
     {
         number++;
     
-        if (eightBoxO.style.visibility == "visible" || eightBoxX.style.visibility == "visible")
+        if (eightBoxO.style.visibility == "visible" || eightBoxX.style.visibility == "visible"
+            || IsGameEnded
+        )
         {
             return;
         }
@@ -491,6 +527,7 @@ div8.onclick = ()=>
             && div9.firstChild.style.visibility == "visible"
         )
        {
+           IsGameEnded = true;
            alert("Congratulation! Player O Is Winner");
            confetti();
        }
@@ -502,11 +539,13 @@ div8.onclick = ()=>
         && div9.lastChild.style.visibility == "visible"
     )
         {
+            IsGameEnded = true;
             alert("Congratulation! Player X Is Winner");
             confetti();
        }
        else if (number == 9) 
         {
+          IsGameEnded = true;
           alert("Game Is Draw!")
        }
     }
@@ -516,7 +555,9 @@ div9.onclick = ()=>
     {
         number++;
     
-        if (ninthBoxO.style.visibility == "visible" || ninthBoxX.style.visibility == "visible")
+        if (ninthBoxO.style.visibility == "visible" || ninthBoxX.style.visibility == "visible"
+            || IsGameEnded
+        )
         {
             return;
         }
@@ -545,6 +586,7 @@ div9.onclick = ()=>
             && div9.firstChild.style.visibility == "visible"
         )
        {
+           IsGameEnded = true;
            alert("Congratulation! Player O Is Winner");
            confetti();
        }
@@ -561,11 +603,13 @@ div9.onclick = ()=>
         && div9.lastChild.style.visibility == "visible"
     )
         {
+            IsGameEnded = true;
             alert("Congratulation! Player X Is Winner");
             confetti();
        }
        else if (number == 9) 
         {
+          IsGameEnded = true;
           alert("Game Is Draw!")
        }
     }
